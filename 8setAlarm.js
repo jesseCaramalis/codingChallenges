@@ -13,4 +13,4 @@ const setAlarm = (employed, vacation) => employed === true && vacation === false
 
 //refactor
 
-const setAlarm = (employed, vacation) => employed && !vacation;
+const setAlarm2 = (employed, vacation) => employed && !vacation;
