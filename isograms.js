@@ -19,3 +19,6 @@ function isIsogram(str){
           return false;
     return true;
   }
+
+  // filter(function(element, index, array){
+  //   return element !== array[index - 1]

@@ -8,8 +8,14 @@
 // a = "abcdefghijklmnopqrstuvwxyz"
 // longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
-// Answer
+//OR IN ENGLISH
+//"Using the letters from both s1 and s2, return the unique letters in alphabetic order"
 
+// Answer
 function longest(s1, s2) {
-    
-  }
+  
+  let arr = s1.concat(s2).split('').sort()
+  return arr.filter(function(element, index, array){
+    return element !== array[index - 1]
+    }).join('')
+}
