@@ -15,12 +15,16 @@
 
 // Answer
 
-String.prototype.isUpperCase = function() {
-    let arr = this.split('')
-    let lower = 'abcdefghijklmnopqrstuvwxyz'.split('')
-    if(arr.some(x => lower.includes(x))){
-        return false
-    }else{
-      return true
-    }
+// String.prototype.isUpperCase = function() {
+//     let arr = this.split('')
+//     let lower = 'abcdefghijklmnopqrstuvwxyz'.split('')
+//     if(arr.some(x => lower.includes(x))){
+//         return false
+//     }else{
+//       return true
+//     }
+//   }
+// Can just compare string to it's uppercase version.
+  String.prototype.isUpperCase = function() {
+    return this.toUpperCase() === this.toString();
   }
