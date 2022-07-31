@@ -16,13 +16,10 @@
 */
 
 function duplicateEncode(word){
-    let arr = word.toLowerCase().split('')
-    let result = arr.map((x,i,a)=>{
-        if(x == arr.filter((item, i) => arr.indexOf(item) != i)){
-            return ')'
-        }else{
-          return '('
-        }
+    let strArr = word.toLowerCase().split('')
+    let result = ''
+    strArr.map((x,i,a)=>{
+      a.indexOf(x) == a.lastIndexOf(x) ? result += '(' : result += ')'
     })
-    return result
-}
+  return result
+    }
