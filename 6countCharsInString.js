@@ -10,4 +10,4 @@ function count (string) {
     return obj
   }
 
-  /* if obj[e] exists, add 1 to it. If it doesnt exist, create it with a value of 0 then add 1 to it.
+  /* if obj[e] exists, add 1 to it. If it doesnt exist, create it with a value of 0 then add 1 to it*/
