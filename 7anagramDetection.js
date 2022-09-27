@@ -11,8 +11,8 @@
 // Answer
     
 const isAnagram = function(test, original) {
-        let a = test.toLowerCase().split('').sort()
-        let b = original.toLowerCase().split('').sort()
-        return a.join('') === b.join('') ? true : false
-        }
+        let testArr = test.toLowerCase().split('').sort()
+        let originalArr = original.toLowerCase().split('').sort()
+        return testArr.join('') === originalArr.join('') ? true : false 
+      };
       
