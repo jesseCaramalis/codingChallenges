@@ -17,3 +17,9 @@ function minMax(arr){
     })
     return [low,high]
   }
+
+  //refactor with math mix/max and spread.
+
+  function minMax(arr){
+    return [Math.min(...arr), Math.max(...arr)];
+  }
