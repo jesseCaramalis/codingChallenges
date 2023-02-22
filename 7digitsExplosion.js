@@ -30,3 +30,13 @@ function explode(s) {
       return expandedDigits[x]
     }).join('')
   }
+
+//Optimised
+
+// can use string.repeat method with the number as the argument, so no need to create an object with the expanded numbers. Same time complexity, but less code.
+
+function explode(s) {
+    return s.split('').map(x=>
+      x.repeat(+x) // plus operator converts string to number, JS will convert to number anyway, but this is more explicit
+    ).join('')
+  }
