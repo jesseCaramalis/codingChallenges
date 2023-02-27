@@ -29,7 +29,6 @@
 // A forEach where we slice the array from the current index to the current index + k, assigning it to the var str.
 // If the length of str is greater than the length of concat, then we reassign concat to str.
 // Loop will only reassign concat if the length of str is greather, preventing the first longest string from being overwritten.
-// O(n^2) complexity
 
 function longestConsec(strarr, k) {
     let concat = ''
