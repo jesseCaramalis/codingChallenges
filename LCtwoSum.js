@@ -45,3 +45,20 @@ var twoSum = function(nums, target) {
         }
     }
 };
+
+//refactor using hash map instead of nested loops
+//we are creating an object with the value as the key and the index as the value
+//we then check if the target-current value is in the object, if it is, then these are the two nums
+//otherwise we add the current value to the object with the index as the value
+
+var twoSum = function(nums, target) {
+    let obj = {}
+    for(let i = 0;i< nums.length; i++){ //loop through array
+        let n = nums[i] //set n to current value for better readability
+        if(obj[target-n] !== undefined) { //if the target-n value is in the object, we have found the pair
+            return [obj[target-n], i]
+        }
+        obj[n] = i //if not, add the value to the object with the index as the value
+    }
+    return obj
+};
